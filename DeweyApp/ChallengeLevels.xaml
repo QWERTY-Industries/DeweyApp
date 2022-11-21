@@ -1,0 +1,54 @@
+﻿<Window x:Class="DeweyApp.ChallengeLevels"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="Challenge Levels" Height="450" Width="800">
+    <Grid>
+        <Label Content="Challenge Levels"
+               FontSize="48"
+               FontWeight="Bold"
+               Margin="0,80,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"/>
+        <Label Name="lblPercentage"
+               Content=""
+               FontSize="48"
+               FontWeight="Bold"
+               Margin="192,159,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblCoins"
+               Content=""
+               FontSize="48"
+               FontWeight="Bold"
+               Margin="458,160,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <Button Name="btnPlay"
+                Content="PLAY"
+                FontSize="48"
+                FontWeight="Bold"
+                Margin="0,280,0,0"
+                Width="240"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" Click="btnPlay_Click"/>
+        <Button Name="btnBack"
+                Content="Back"
+                FontSize="24"
+                FontWeight="Bold"
+                Margin="10,10,0,0"
+                Width="120"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnBack_Click"/>
+        
+        <Image x:Name="image"
+               Visibility="Hidden"
+               Height="100"
+               Width="100"
+               Margin="50,312,650,22"/>
+    </Grid>
+</Window>

@@ -1,0 +1,146 @@
+﻿<Window x:Class="DeweyApp.ReplacingBooksLevel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="Replacing Books Level" Height="450" Width="800">
+    <Grid>
+        <Rectangle Fill="White"
+                   Height="56"
+                   Width="180"
+                   Margin="10,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"/>
+        <Rectangle Fill="White"
+                   Height="53"
+                   Width="261"
+                   Margin="430,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"/>
+        <Rectangle Name="bgPercentage" Fill="White"
+                   Visibility="Hidden"
+                   Height="53"
+                   Width="107"
+                   Margin="430,348,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"/>
+
+        <Label Name="lblUnsorted"
+               Content="Unsorted"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="10,10,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblSorted"
+               Content="Sorted"
+               Visibility="Hidden"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="10,10,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <Label Name="lblSortTheBooks"
+               Content="Sort the Books!"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="430,10,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblYourAnswer"
+               Content="Your Answer"
+               Visibility="Hidden"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="430,10,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <ListBox Name="lsbUnsorted"
+                 Height="220"
+                 Width="180"
+                 Margin="10,68,610,141"/>
+        <ListBox Name="lsbUserSorted"
+                 Height="220"
+                 Width="180"
+                 Margin="430,68,190,146"/>
+
+        <Button x:Name="btnMoveRight"
+                Content="R"
+                FontSize="24"
+                Height="50"
+                Width="50"
+                Margin="195,73,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnMoveRight_Click"/>
+        <Button x:Name="btnMoveLeft"
+                Content="L"
+                FontSize="24"
+                Height="50"
+                Width="50"
+                Margin="0,73,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" Click="btnMoveLeft_Click"/>
+        <Button x:Name="btnMoveUp"
+                Content="U"
+                FontSize="24"
+                Height="50"
+                Width="50"
+                Margin="615,73,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnMoveUp_Click"/>
+        <Button x:Name="btnMoveDown"
+                Content="D"
+                FontSize="24"
+                Height="50"
+                Width="50"
+                Margin="615,128,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnMoveDown_Click"/>
+
+        <Button x:Name="btnMoveAuto"
+                Visibility="Hidden"
+                Content="A"
+                FontSize="24"
+                Height="50"
+                Width="50"
+                Margin="195,128,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnMoveAuto_Click"/>
+
+        <Label Name="lblPercentage"
+               Content=""
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="430,348,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <Button x:Name="btnSubmit"
+                Content="Submit"
+                FontSize="24"
+                Height="50"
+                Width="180"
+                Margin="430,293,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnSubmit_Click"/>
+        <Button x:Name="btnContinue"
+                Content="Continue"
+                Visibility="Hidden"
+                FontSize="24"
+                Height="50"
+                Width="180"
+                Margin="430,293,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnContinue_Click"/>
+
+        <Image x:Name="image"
+               Visibility="Hidden"
+               Height="100"
+               Width="100"
+               Margin="50,312,650,22"/>
+    </Grid>
+</Window>

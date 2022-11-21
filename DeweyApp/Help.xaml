@@ -1,0 +1,59 @@
+﻿<Window x:Class="DeweyApp.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="Help" Height="450" Width="800">
+    <Grid>
+        <Label Content="Help"
+               FontSize="48"
+               FontWeight="Bold"
+               Margin="0,10,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"/>
+        <Label Content="Dewey App Navigation"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="10,89,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Content=
+" Profile - Edit your Profile with Owned Customisation Items&#x0d;&#x0a;
+Adventure Map - Play a One-Time Story to Level Up and Earn Coins&#x0d;&#x0a;
+Challenge Levels - Play Levels to Level Up and Earn Coins&#x0d;&#x0a;
+Leaderboard - View the Top Level Players' Profiles&#x0d;&#x0a;
+Achievements - Complete Goals to Earn Profile Customisation Items&#x0d;&#x0a;
+Shop - Spend your Coins to Earn Profile Customisation Items&#x0d;&#x0a;
+Help - Get Navigation Information&#x0d;&#x0a;
+Back - Return to the Main Menu"
+               FontSize="24"
+               Margin="10,152,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <TextBox Name="txbDeveloperCode"
+                 FontSize="24"
+                 Width="240"
+                 Margin="458,366,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"/>
+        <Button Name="btnEnter"
+                Content="E"
+                FontSize="24"
+                Width="40"
+                Margin="703,365,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnEnter_Click"/>
+        
+        <Button Name="btnBack"
+                Content="Back"
+                FontSize="24"
+                FontWeight="Bold"
+                Margin="10,10,0,0"
+                Width="120"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnBack_Click"/>
+    </Grid>
+</Window>

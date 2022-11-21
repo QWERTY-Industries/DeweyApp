@@ -1,0 +1,111 @@
+﻿<Window x:Class="DeweyApp.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="Main Menu" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnProfile"
+                Content="Profile"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnProfile_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/ProfileButton.jpeg"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Name="btnReplacingBooks"
+                Content="Replacing Books"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="200,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnReplacingBooks_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/ReplacingBooksButton.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnIdentifyingAreas"
+                Content="Identifying Areas"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="400,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnIdentifyingAreas_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/IdentifyingAreasButton.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnFindingCallNumbers"
+                Content="Finding Call Numbers"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="600,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnFindingCallNumbers_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/FindingCallNumbersButton.jpg"/>
+            </Button.Background>
+        </Button>
+
+        <Button Name="btnAchievements"
+                Content="Achievements"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="0,218,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnAchievements_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/AchievementsButton.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnShop"
+                Content="Shop"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="200,218,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnShop_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/ShopButton.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnHelp"
+                Content="Help"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="400,218,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnHelp_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/HelpButton.jpeg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnLogOut"
+                Content="Log Out"
+                FontSize="24"
+                Width="200"
+                Height="218"
+                Margin="600,218,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnLogOut_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/LogOutButton.jpeg"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

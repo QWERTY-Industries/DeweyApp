@@ -1,0 +1,224 @@
+﻿<Window x:Class="DeweyApp.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="Profile" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/GeneralBackgrounds/ProfileBackground.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Profile"
+               FontSize="48"
+               FontWeight="Bold"
+               Margin="0,10,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"/>
+        <Image Name="imgDisplayPicture"
+               Height="100"
+               Width="100"
+               Margin="100,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"/>
+
+        <Label Name="lblUsername"
+               Content="DeweyUser"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="200,100,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblTotalLevel"
+               Content="0"
+               FontSize="36"
+               FontWeight="DemiBold"
+               Margin="419,100,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <Label Name="lblRbLevel"
+               Content="Replacing Books Level"
+               FontSize="24"
+               Margin="205,145,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblIaLevel"
+               Content="Identifying Areas Level"
+               FontSize="24"
+               Margin="205,172,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <Label Name="lblFcnLevel"
+               Content="Finding Call Numbers Level"
+               FontSize="24"
+               Margin="205,203,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+
+        <Image Name="imgBookReplacer"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="525,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/ProcessorBadge.jpg">
+        </Image>
+        <Image Name="imgAreaIdentifier"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="570,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/WigBadge.jpg">
+        </Image>
+        <Image Name="imgCallNumberFinder"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="615,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/HelmetBadge.jpg">
+        </Image>
+
+        <Image Name="imgNewbie"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="660,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/NewbieBadge.jpg">
+        </Image>
+        <Image Name="imgNovice"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="705,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/NoviceBadge.jpg">
+        </Image>
+        <Image Name="imgHead"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="750,100,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/HeadBadge.jpg">
+        </Image>
+
+        <Image Name="imgPamphlet"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="525,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/PamphletBadge.jpg">
+        </Image>
+        <Image Name="imgManual"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="570,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/ManualBadge.jpg">
+        </Image>
+        <Image Name="imgEncyclopedia"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="615,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/EncyclopediaBadge.jpg">
+        </Image>
+
+        <Image Name="imgRobotBobble"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="660,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/RobotBadge.jpg">
+        </Image>
+        <Image Name="imgGoblinBobble"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="705,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/GoblinBadge.jpg">
+        </Image>
+        <Image Name="imgKnightBobble"
+               Visibility="Hidden"
+               Height="40"
+               Width="40"
+               Margin="750,145,0,0"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Source="/Images/Badges/KnightBadge.jpg">
+        </Image>
+
+        <Label Content="Change Username:"
+               FontSize="24"
+               Margin="100,250,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <TextBox Name="txbUsername"
+                 FontSize="24"
+                 Width="240"
+                 Margin="314,254,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"/>
+        <Button Name="btnChangeUsername"
+                Content="Change"
+                FontSize="24"
+                Width="120"
+                Margin="559,253,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnChangeUsername_Click"/>
+
+        <Label Content="Change Picture:"
+               FontSize="24"
+               Margin="134,297,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"/>
+        <ListBox Name="lstPictures"
+                 Height="100"
+                 Width="180"
+                 Margin="315,297,305,37"/>
+        <Button Name="btnSelectPicture"
+                Content="Select"
+                FontSize="24"
+                Width="120"
+                Margin="500,297,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnSelectPicture_Click"/>
+        <Button Name="btnRemovePicture"
+                Content="Remove"
+                FontSize="24"
+                Width="120"
+                Margin="500,338,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnRemovePicture_Click"/>
+
+        <Button Name="btnBack"
+                Content="Back"
+                FontSize="24"
+                FontWeight="Bold"
+                Margin="10,10,0,0"
+                Width="120"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="btnBack_Click"/>
+    </Grid>
+</Window>

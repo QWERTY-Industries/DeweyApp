@@ -1,0 +1,58 @@
+﻿<Window x:Class="DeweyApp.SubMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeweyApp"
+        mc:Ignorable="d"
+        Title="SubMenu" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnAdventureMap"
+                Content="Adventure Map"
+                FontSize="24"
+                Width="200"
+                Height="434"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Click="btnAdventureMap_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/AdventureMapButton.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnChallengeLevels"
+                Content="Challenge Levels"
+                FontSize="24"
+                Width="200"
+                Height="434"
+                Margin="200,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Click="btnChallengeLevels_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/ChallengeLevelsButton.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnLeaderboard"
+                Content="Leaderboard"
+                FontSize="24"
+                Width="200"
+                Height="434"
+                Margin="400,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Click="btnLeaderboard_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/LeaderboardButton.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnBack"
+                Content="Back"
+                FontSize="24"
+                Width="200"
+                Height="434"
+                Margin="600,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Click="btnBack_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Buttons/BackButton.jpg"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

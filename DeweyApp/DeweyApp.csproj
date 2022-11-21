@@ -1,0 +1,215 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\Adventure\**" />
+    <Compile Remove="Images\Backgrounds\**" />
+    <EmbeddedResource Remove="Images\Adventure\**" />
+    <EmbeddedResource Remove="Images\Backgrounds\**" />
+    <None Remove="Images\Adventure\**" />
+    <None Remove="Images\Backgrounds\**" />
+    <Page Remove="Images\Adventure\**" />
+    <Page Remove="Images\Backgrounds\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Avatars\BookAvatar.jpg" />
+    <None Remove="Images\Avatars\DefaultAvatar.jpg" />
+    <None Remove="Images\Avatars\GoblinAvatar.jpg" />
+    <None Remove="Images\Avatars\GroupAvatar.jpg" />
+    <None Remove="Images\Avatars\KnightAvatar.jpg" />
+    <None Remove="Images\Avatars\ManAvatar.jpg" />
+    <None Remove="Images\Avatars\QwertyAvatar.jpg" />
+    <None Remove="Images\Avatars\RobotAvatar.jpg" />
+    <None Remove="Images\Avatars\WomanAvatar.jpg" />
+    <None Remove="Images\Badges\EncyclopediaBadge.jpg" />
+    <None Remove="Images\Badges\GoblinBadge.jpg" />
+    <None Remove="Images\Badges\HeadBadge.jpg" />
+    <None Remove="Images\Badges\HelmetBadge.jpg" />
+    <None Remove="Images\Badges\KnightBadge.jpg" />
+    <None Remove="Images\Badges\ManualBadge.jpg" />
+    <None Remove="Images\Badges\NewbieBadge.jpg" />
+    <None Remove="Images\Badges\NoviceBadge.jpg" />
+    <None Remove="Images\Badges\PamphletBadge.jpg" />
+    <None Remove="Images\Badges\ProcessorBadge.jpg" />
+    <None Remove="Images\Badges\RobotBadge.jpg" />
+    <None Remove="Images\Badges\WigBadge.jpg" />
+    <None Remove="Images\Buttons\AchievementsButton.jpeg" />
+    <None Remove="Images\Buttons\AchievementsButton.jpg" />
+    <None Remove="Images\Buttons\AdventureMapButton.jpg" />
+    <None Remove="Images\Buttons\BackButton.jpg" />
+    <None Remove="Images\Buttons\ChallengeLevelsButton.jpg" />
+    <None Remove="Images\Buttons\FindingCallNumbersButton.jpeg" />
+    <None Remove="Images\Buttons\FindingCallNumbersButton.jpg" />
+    <None Remove="Images\Buttons\HelpBackground.jpeg" />
+    <None Remove="Images\Buttons\HelpButton.jpeg" />
+    <None Remove="Images\Buttons\HelpButton.jpg" />
+    <None Remove="Images\Buttons\IdentifyingAreasButton.jpeg" />
+    <None Remove="Images\Buttons\IdentifyingAreasButton.jpg" />
+    <None Remove="Images\Buttons\LeaderboardButton.jpg" />
+    <None Remove="Images\Buttons\LogOutButton.jpeg" />
+    <None Remove="Images\Buttons\ProfileButton.jpeg" />
+    <None Remove="Images\Buttons\ProfileButton.jpg" />
+    <None Remove="Images\Buttons\ReplacingBooksButton.jpeg" />
+    <None Remove="Images\Buttons\ReplacingBooksButton.jpg" />
+    <None Remove="Images\Buttons\ShopButton.jpeg" />
+    <None Remove="Images\Buttons\ShopButton.jpg" />
+    <None Remove="Images\Comics\IntroA.jpg" />
+    <None Remove="Images\Comics\IntroB.jpg" />
+    <None Remove="Images\Comics\IntroC.jpg" />
+    <None Remove="Images\Comics\OutroA.jpg" />
+    <None Remove="Images\Comics\OutroB.jpg" />
+    <None Remove="Images\Comics\OutroC.jpg" />
+    <None Remove="Images\ComputerScience.jpg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\AdventureMapC.jpg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\ChallengeLevelsC.jpg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\LeaderboardC.jpg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level10c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level1c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level2c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level3c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level4c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level5c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level6c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level7c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level8c.jpeg" />
+    <None Remove="Images\FindingCallNumbersBackgrounds\Level9c.jpeg" />
+    <None Remove="Images\GeneralBackgrounds\AchievementsBackground.jpg" />
+    <None Remove="Images\GeneralBackgrounds\ComingSoonBackground.jpg" />
+    <None Remove="Images\GeneralBackgrounds\LogInBackground.jpg" />
+    <None Remove="Images\GeneralBackgrounds\ProfileBackground.jpg" />
+    <None Remove="Images\GeneralBackgrounds\Shop.jpg" />
+    <None Remove="Images\GeneralBackgrounds\ShopBackground.jpg" />
+    <None Remove="Images\GeneralBackgrounds\SignUpBackground.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\AdventureMapB.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\ChallengeLevelsB.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\LeaderboardB.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level10b.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level1b.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level2b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level3b.jpg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level4b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level5b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level6b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level7b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level8b.jpeg" />
+    <None Remove="Images\IdentifyingAreasBackgrounds\Level9b.jpeg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\AdventureMapA.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\ChallengeLevelsA.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\LeaderboardA.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level10a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level1a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level2a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level3a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level4a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level5a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level6a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level7a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level8a.jpg" />
+    <None Remove="Images\ReplacingBooksBackgrounds\Level9a.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Firebase.Database" Version="1.0.0" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeweyLibrary\DeweyLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Avatars\BookAvatar.jpg" />
+    <Resource Include="Images\Avatars\DefaultAvatar.jpg" />
+    <Resource Include="Images\Avatars\GoblinAvatar.jpg" />
+    <Resource Include="Images\Avatars\GroupAvatar.jpg" />
+    <Resource Include="Images\Avatars\KnightAvatar.jpg" />
+    <Resource Include="Images\Avatars\ManAvatar.jpg" />
+    <Resource Include="Images\Avatars\QwertyAvatar.jpg" />
+    <Resource Include="Images\Avatars\RobotAvatar.jpg" />
+    <Resource Include="Images\Avatars\WomanAvatar.jpg" />
+    <Resource Include="Images\Badges\EncyclopediaBadge.jpg" />
+    <Resource Include="Images\Badges\GoblinBadge.jpg" />
+    <Resource Include="Images\Badges\HeadBadge.jpg" />
+    <Resource Include="Images\Badges\HelmetBadge.jpg" />
+    <Resource Include="Images\Badges\KnightBadge.jpg" />
+    <Resource Include="Images\Badges\ManualBadge.jpg" />
+    <Resource Include="Images\Badges\NewbieBadge.jpg" />
+    <Resource Include="Images\Badges\NoviceBadge.jpg" />
+    <Resource Include="Images\Badges\PamphletBadge.jpg" />
+    <Resource Include="Images\Badges\ProcessorBadge.jpg" />
+    <Resource Include="Images\Badges\RobotBadge.jpg" />
+    <Resource Include="Images\Badges\WigBadge.jpg" />
+    <Resource Include="Images\Buttons\AchievementsButton.jpeg" />
+    <Resource Include="Images\Buttons\AdventureMapButton.jpg" />
+    <Resource Include="Images\Buttons\BackButton.jpg" />
+    <Resource Include="Images\Buttons\ChallengeLevelsButton.jpg" />
+    <Resource Include="Images\Buttons\FindingCallNumbersButton.jpg" />
+    <Resource Include="Images\Buttons\HelpButton.jpeg" />
+    <Resource Include="Images\Buttons\IdentifyingAreasButton.jpg" />
+    <Resource Include="Images\Buttons\LeaderboardButton.jpg" />
+    <Resource Include="Images\Buttons\LogOutButton.jpeg" />
+    <Resource Include="Images\Buttons\ProfileButton.jpeg" />
+    <Resource Include="Images\Buttons\ReplacingBooksButton.jpg" />
+    <Resource Include="Images\Buttons\ShopButton.jpeg" />
+    <Resource Include="Images\Comics\IntroA.jpg" />
+    <Resource Include="Images\Comics\IntroB.jpg" />
+    <Resource Include="Images\Comics\IntroC.jpg" />
+    <Resource Include="Images\Comics\OutroA.jpg" />
+    <Resource Include="Images\Comics\OutroB.jpg" />
+    <Resource Include="Images\Comics\OutroC.jpg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\AdventureMapC.jpg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\ChallengeLevelsC.jpg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\LeaderboardC.jpg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level10c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level1c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level2c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level3c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level4c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level5c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level6c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level7c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level8c.jpeg" />
+    <Resource Include="Images\FindingCallNumbersBackgrounds\Level9c.jpeg" />
+    <Resource Include="Images\GeneralBackgrounds\AchievementsBackground.jpg" />
+    <Resource Include="Images\GeneralBackgrounds\ComingSoonBackground.jpg" />
+    <Resource Include="Images\GeneralBackgrounds\LogInBackground.jpg" />
+    <Resource Include="Images\GeneralBackgrounds\ProfileBackground.jpg" />
+    <Resource Include="Images\GeneralBackgrounds\ShopBackground.jpg" />
+    <Resource Include="Images\GeneralBackgrounds\SignUpBackground.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\AdventureMapB.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\ChallengeLevelsB.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\LeaderboardB.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level10b.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level1b.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level2b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level3b.jpg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level4b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level5b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level6b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level7b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level8b.jpeg" />
+    <Resource Include="Images\IdentifyingAreasBackgrounds\Level9b.jpeg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\AdventureMapA.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\ChallengeLevelsA.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\LeaderboardA.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level10a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level1a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level2a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level3a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level4a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level5a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level6a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level7a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level8a.jpg" />
+    <Resource Include="Images\ReplacingBooksBackgrounds\Level9a.jpg" />
+  </ItemGroup>
+
+</Project>
