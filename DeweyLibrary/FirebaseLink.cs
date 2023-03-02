@@ -26,13 +26,13 @@ namespace DeweyApp.MVVM.ViewModel
         //Q Initialize Firebase
         IFirebaseConfig config = new FirebaseConfig()
         {
-            AuthSecret = "nvpRRGA25wWLVPjL2Zhoi9JLx8UDH2WMTRDR7ixH",
-            BasePath = "https://deweyapp-4419c-default-rtdb.firebaseio.com/"
+            AuthSecret = "pvwjAGIyZkYkBeJLL7IG1rP2xu23omTDfjLnKKHk",
+            BasePath = "https://deweyapp-b42dc-default-rtdb.firebaseio.com/"
         };
 
         IFirebaseClient client;
 
-        string basePath = "https://deweyapp-4419c-default-rtdb.firebaseio.com/";
+        string basePath = "https://deweyapp-b42dc-default-rtdb.firebaseio.com/";
 
         //Q The following code deals with signing up and logging in users QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
 

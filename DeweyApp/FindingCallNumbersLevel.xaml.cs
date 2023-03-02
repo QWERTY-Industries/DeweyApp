@@ -149,30 +149,68 @@ namespace DeweyApp
         private void btnConfirmMiddle_Click(object sender, RoutedEventArgs e)
         {
             System.Collections.IList selectedItems = lsbMiddleLevelCategories.SelectedItems;
-            string userAnswer = selectedItems.ToString().Substring(0, 3);
             string correctAnswer = treeLink.FindCategory(onePositionId, 1).id;
 
-            if (userAnswer == correctAnswer)
+            //string userAnswer = lsbMiddleLevelCategories.Items[0].ToString().Substring(0, 3);
+
+            string userAnswerOLD = selectedItems.ToString().Substring(0, 3);
+
+            if (lsbMiddleLevelCategories.SelectedIndex != -1)
             {
-                lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
-                btnConfirmMiddle.Visibility = Visibility.Hidden;
-                lblMiddleSelection.Content = userAnswer;
-                lblMiddleSelection.Visibility = Visibility.Visible;
+                for (int i = selectedItems.Count - 1; i >= 0; i--)
+                {
+                    string userAnswer = lsbMiddleLevelCategories.Items[0].ToString().Substring(0, 3);
+                    if (lsbMiddleLevelCategories.Items[i].ToString().Substring(0, 3) == correctAnswer)
+                    {
+                        lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
+                        btnConfirmMiddle.Visibility = Visibility.Hidden;
+                        lblMiddleSelection.Content = lsbMiddleLevelCategories.Items[0].ToString();
+                        lblMiddleSelection.Visibility = Visibility.Visible;
 
-                lsbBottomLevelCategories.Visibility = Visibility.Visible;
-                btnConfirmBottom.Visibility = Visibility.Visible;
+                        lsbBottomLevelCategories.Visibility = Visibility.Visible;
+                        btnConfirmBottom.Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        lsbTopLevelCategories.Visibility = Visibility.Hidden;
+                        btnConfirmTop.Visibility = Visibility.Hidden;
+
+                        lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
+                        btnConfirmMiddle.Visibility = Visibility.Hidden;
+
+                        lblPercentage.Content = "33%";
+                        btnContinue.Visibility = Visibility.Visible;
+                    }
+                }
             }
-            else
-            {
-                lsbTopLevelCategories.Visibility = Visibility.Hidden;
-                btnConfirmTop.Visibility = Visibility.Hidden;
 
-                lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
-                btnConfirmMiddle.Visibility= Visibility.Hidden;
+            //https://stackoverflow.com/questions/13149486/delete-selected-items-from-listbox
+            
+            //System.Collections.IList selectedItems = lsbMiddleLevelCategories.SelectedItems;
+            //string userAnswer = selectedItems.ToString().Substring(0, 3);
+            //string correctAnswer = treeLink.FindCategory(onePositionId, 1).id;
 
-                lblPercentage.Content = "33%";
-                btnContinue.Visibility = Visibility.Visible;
-            }
+            //if (userAnswer == correctAnswer)
+            //{
+            //    lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
+            //    btnConfirmMiddle.Visibility = Visibility.Hidden;
+            //    lblMiddleSelection.Content = userAnswer;
+            //    lblMiddleSelection.Visibility = Visibility.Visible;
+
+            //    lsbBottomLevelCategories.Visibility = Visibility.Visible;
+            //    btnConfirmBottom.Visibility = Visibility.Visible;
+            //}
+            //else
+            //{
+            //    lsbTopLevelCategories.Visibility = Visibility.Hidden;
+            //    btnConfirmTop.Visibility = Visibility.Hidden;
+
+            //    lsbMiddleLevelCategories.Visibility = Visibility.Hidden;
+            //    btnConfirmMiddle.Visibility= Visibility.Hidden;
+
+            //    lblPercentage.Content = "33%";
+            //    btnContinue.Visibility = Visibility.Visible;
+            //}
         }
 
         private void btnConfirmBottom_Click(object sender, RoutedEventArgs e)
